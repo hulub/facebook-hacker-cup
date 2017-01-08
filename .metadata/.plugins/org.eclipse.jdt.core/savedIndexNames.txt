@@ -1,0 +1,4 @@
+INDEX VERSION 1.127+C:\Users\hulub_000\workspace facebook hacker cup\.metadata\.plugins\org.eclipse.jdt.core
+1607016142.index
+2044438366.index
+2905382911.index

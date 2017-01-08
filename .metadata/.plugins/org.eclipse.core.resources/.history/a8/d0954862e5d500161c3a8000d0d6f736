@@ -1,0 +1,10 @@
+
+public class Spell {
+	public final int times, faces;
+	
+	public Spell(String s) {
+		String[] s_split = s.split("d");
+		times = s_split[0];
+		faces = s_split[1];
+	}
+}

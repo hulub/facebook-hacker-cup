@@ -1,0 +1,24 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) throws NumberFormatException, IOException {
+		Scanner scanner = new Scanner(new File("progress_pie_example_input.txt"));
+		int T = Integer.parseInt(scanner.nextLine());
+		for (int i = 0; i < T; i++) {
+			int P = scanner.nextInt();
+			int X = scanner.nextInt();
+			int Y = scanner.nextInt();
+			boolean inCircle = isInCircle(X, Y);
+			System.out.println(P + " " + X + " " + Y + " " + inCircle);
+
+		}
+		scanner.close();
+	}
+
+	private static boolean isInCircle(int x, int y) {
+		double distance = Math.sqrt((x - 50) * (x - 50) + (y - 50) * (y - 50));
+		return distance <= 50;
+	}
+}
